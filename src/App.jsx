@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       // Routes can be defined as relative (as they are here), or absolute (with a leading forward slash)
-      { path: '', element: <HomePage /> },
+      { index: true, element: <HomePage /> },
       { path: 'products', element: <ProductsPage /> },
       { path: 'products/:productId', element: <ProductDetailPage /> },
     ],
